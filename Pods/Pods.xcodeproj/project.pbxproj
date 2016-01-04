@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003AF3C120288E037C48576B2243E471 /* Compass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F03C6A5FC1417677D62875B130EB211C /* Compass@3x.png */; };
+		075CA9CE6701899DCE838F62C54DDA7A /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A32AB2698D6C21BB00D594689E10E76 /* Debugging.swift */; };
+		0CAC0CC4DCAC675916FCBCA05B638C9F /* default_marker@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E076C28C5ED7AC5821C85ABA598B457F /* default_marker@3x.png */; };
+		196AB93D6F91BD3B8A662E3BABF3D5AE /* mapbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33FFD747448B05034CD3D8E811812332 /* mapbox@2x.png */; };
+		22A156810076F6D1A7E3B62042878526 /* mapbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 883ACA5A91456C0DF913DF54CEA93275 /* mapbox.png */; };
+		246B83FF4233474C7CE63011CBE8CB02 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83416B1D695CFEEA7B5C65CF5BABE98 /* SnapKit.swift */; };
+		27A42E014F2BDAB654091D9374CB1120 /* Pods-Blitz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EECCE54ECE1BFAE1014D82DF1543B920 /* Pods-Blitz-dummy.m */; };
+		2F3EF98D44B18A5738B996EB7851B102 /* Compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D67BA800D4126BEA226BA46326F5B9 /* Compass@2x.png */; };
+		353B54C6860570D5EAD260AAACDB262E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0E7D4F94B1A656530F04895C46FB6 /* ConstraintAttributes.swift */; };
+		36A47FF84D2DA2AB4AA3FA6AE79DDE02 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD477E3753847552A5C56DA3CA76E3 /* ConstraintRelation.swift */; };
+		4105F60998DB316B7E205F0F58E8C621 /* api_mapbox_com-digicert.der in Resources */ = {isa = PBXBuildFile; fileRef = 3A774D48B2221A106A5D6DD2D2C1B4DE /* api_mapbox_com-digicert.der */; };
+		45627E38A4C02F4306763B7180CA5707 /* star_tilestream_net.der in Resources */ = {isa = PBXBuildFile; fileRef = 302252C9FC1F74D2A287D87FAF71E03B /* star_tilestream_net.der */; };
+		47A9F9BD87FC2D2177ACCC5389C13022 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584511AA09FA6581C9CFD9BA31FE6A3 /* ConstraintItem.swift */; };
+		49B536E2B299F526B962C80B9B536720 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883B2D9418BC92027AC3BC6E377666E /* LayoutConstraint.swift */; };
+		4E86E4895AED1D572EF89E302F6172FB /* default_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = DD409D51091659E198B274378BF92761 /* default_marker.png */; };
+		4E88BA7C32F0CB7EC35D778DBA0FC76E /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB8285B810D1C2CB95D6CC9B93C07D5 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D896DFB8B4FAA92F11E7346A0330E3B /* mapbox@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEA4CA56693879011FFB014929E42BB /* mapbox@3x.png */; };
+		734BE08E85B667325E5AB8FF0C746493 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3636B295AB0FBCC15EA827C2E69047 /* ViewController+SnapKit.swift */; };
+		7A2E6F60552CDA17FAED3CCBCA9C2A9A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9F0B4E5BCF2435714D85618FA7C39 /* Constraint.swift */; };
+		7F08253B3DEE11FA555749FD7D7B87F1 /* Pods-Blitz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AAB4381B3CEA6F40C600652C9F1018 /* Pods-Blitz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CD532FBF48416A5AEB3725C68AA5F6 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 88C952D276CD886285C3804C255DFA38 /* README */; };
+		8BC6C182AC595289B59FACD63C86218B /* api_mapbox_com-geotrust.der in Resources */ = {isa = PBXBuildFile; fileRef = DDF93499D49B380B5DE44C8ACCBCC632 /* api_mapbox_com-geotrust.der */; };
+		92A9118401E9D945DCC5FE84F36B0D1B /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E669C0DEE99B4BEA65B8DAD710DFD66 /* ConstraintDescription.swift */; };
+		A1C0DC366F36DA278187B54336AB6182 /* default_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E16872895E66501D466BB97FDEAF5E30 /* default_marker@2x.png */; };
+		A5BAB2D0C1F961788A64C1B410F9890D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2FD2875014FA9E0C5029677BE7314 /* SnapKit-dummy.m */; };
+		B151EE1D4CAC22A48013407AB8566260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B3892B94666972C4D5490834681ED751 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69973C6B67FBABC19A23E31704E8FA10 /* View+SnapKit.swift */; };
+		B43BD2816013609E80E66FEEB585FF96 /* Compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 74155F1963420C0D756B5119E68442B8 /* Compass.png */; };
+		B7F4B00F4505935EA4D77F6377DEC906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D7A60CD80AE4274FC24810AB2F7002E3 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627728C02BF8FA7D15BB561C72A07727 /* ConstraintMaker.swift */; };
+		FF27E764262648B49ABF55AC8409B990 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9D7B2F944576B658FC46E92C97532 /* EdgeInsets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A0ECCA7520527D559D81C25C1BE8D0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F16F29AEF1DDD761FE6F5DE9604FF23A;
+			remoteInfo = SnapKit;
+		};
+		211A24192517F655392E3E8419468363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DB59219DEF5D393F19F0753F2D9C161;
+			remoteInfo = "Mapbox-iOS-SDK-Mapbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A266F91EEDA6509534B2E063A04438 /* Pods-Blitz-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blitz-resources.sh"; sourceTree = "<group>"; };
+		07174A394689C66BD9FA1CE8E8D8B315 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		12DA3A384000FCECEB7018712B8D8DEA /* Pods-Blitz-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blitz-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16D67BA800D4126BEA226BA46326F5B9 /* Compass@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Compass@2x.png"; path = "Mapbox.framework/Mapbox.bundle/Compass@2x.png"; sourceTree = "<group>"; };
+		1D9E03934EAF82A8E8FBCD30D5F89638 /* Pods-Blitz-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blitz-acknowledgements.plist"; sourceTree = "<group>"; };
+		2584511AA09FA6581C9CFD9BA31FE6A3 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		2883B2D9418BC92027AC3BC6E377666E /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		2BB2FD2875014FA9E0C5029677BE7314 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		302252C9FC1F74D2A287D87FAF71E03B /* star_tilestream_net.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = star_tilestream_net.der; path = Mapbox.framework/Mapbox.bundle/star_tilestream_net.der; sourceTree = "<group>"; };
+		33FFD747448B05034CD3D8E811812332 /* mapbox@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mapbox@2x.png"; path = "Mapbox.framework/Mapbox.bundle/mapbox@2x.png"; sourceTree = "<group>"; };
+		3562CA019111E842DE557B857972C758 /* Pods-Blitz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Blitz.modulemap"; sourceTree = "<group>"; };
+		3A774D48B2221A106A5D6DD2D2C1B4DE /* api_mapbox_com-digicert.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "api_mapbox_com-digicert.der"; path = "Mapbox.framework/Mapbox.bundle/api_mapbox_com-digicert.der"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4260A5C6D2223B946C227D91EACCA4A1 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3636B295AB0FBCC15EA827C2E69047 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		58BD1D76C5EC629088082DD74F86D2D6 /* Pods_Blitz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blitz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E669C0DEE99B4BEA65B8DAD710DFD66 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		60D0E7D4F94B1A656530F04895C46FB6 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		627728C02BF8FA7D15BB561C72A07727 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		665A092D838A1099BE751880B9E1FFF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B8086134374732A56D61B25DE20263 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69973C6B67FBABC19A23E31704E8FA10 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		74155F1963420C0D756B5119E68442B8 /* Compass.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Compass.png; path = Mapbox.framework/Mapbox.bundle/Compass.png; sourceTree = "<group>"; };
+		74E9D7B2F944576B658FC46E92C97532 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		883ACA5A91456C0DF913DF54CEA93275 /* mapbox.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mapbox.png; path = Mapbox.framework/Mapbox.bundle/mapbox.png; sourceTree = "<group>"; };
+		88C952D276CD886285C3804C255DFA38 /* README */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README; path = Mapbox.framework/Mapbox.bundle/README; sourceTree = "<group>"; };
+		8BBD477E3753847552A5C56DA3CA76E3 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		8BE9F0B4E5BCF2435714D85618FA7C39 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		969C4F2DB91F5E888CD30E0C3683DD59 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		9A32AB2698D6C21BB00D594689E10E76 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		9F543D8851840499BA8E8305EF76B61F /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		A3E3B389F99CA8141C66BBAC180A913E /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		A83416B1D695CFEEA7B5C65CF5BABE98 /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		AA9B1A3707927A1E6948069E048E4A65 /* Pods-Blitz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blitz.release.xcconfig"; sourceTree = "<group>"; };
+		ADA6C285D1AB97925F547DB1CA797EC2 /* Pods-Blitz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blitz.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7AAB4381B3CEA6F40C600652C9F1018 /* Pods-Blitz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blitz-umbrella.h"; sourceTree = "<group>"; };
+		CAC84EBA6C3CCDCC463550613A2DF2C6 /* Mapbox.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mapbox.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1768D17E3A01CF4AC21EDE4CCE14B36 /* Pods-Blitz-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blitz-frameworks.sh"; sourceTree = "<group>"; };
+		DD409D51091659E198B274378BF92761 /* default_marker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = default_marker.png; path = Mapbox.framework/Mapbox.bundle/default_marker.png; sourceTree = "<group>"; };
+		DDB8285B810D1C2CB95D6CC9B93C07D5 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		DDF93499D49B380B5DE44C8ACCBCC632 /* api_mapbox_com-geotrust.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "api_mapbox_com-geotrust.der"; path = "Mapbox.framework/Mapbox.bundle/api_mapbox_com-geotrust.der"; sourceTree = "<group>"; };
+		E076C28C5ED7AC5821C85ABA598B457F /* default_marker@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "default_marker@3x.png"; path = "Mapbox.framework/Mapbox.bundle/default_marker@3x.png"; sourceTree = "<group>"; };
+		E16872895E66501D466BB97FDEAF5E30 /* default_marker@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "default_marker@2x.png"; path = "Mapbox.framework/Mapbox.bundle/default_marker@2x.png"; sourceTree = "<group>"; };
+		EECCE54ECE1BFAE1014D82DF1543B920 /* Pods-Blitz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blitz-dummy.m"; sourceTree = "<group>"; };
+		F03C6A5FC1417677D62875B130EB211C /* Compass@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Compass@3x.png"; path = "Mapbox.framework/Mapbox.bundle/Compass@3x.png"; sourceTree = "<group>"; };
+		FCEA4CA56693879011FFB014929E42BB /* mapbox@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mapbox@3x.png"; path = "Mapbox.framework/Mapbox.bundle/mapbox@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02AA166F8628CCCBF0CF4716DB5C6993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B151EE1D4CAC22A48013407AB8566260 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051B9484CB25C8E6AC178354CEC786E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C874EE24843B368D2C7968F658118D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4B00F4505935EA4D77F6377DEC906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B8CDA487D6AAA6CFFC0EF7D4FDB106B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A774D48B2221A106A5D6DD2D2C1B4DE /* api_mapbox_com-digicert.der */,
+				DDF93499D49B380B5DE44C8ACCBCC632 /* api_mapbox_com-geotrust.der */,
+				74155F1963420C0D756B5119E68442B8 /* Compass.png */,
+				16D67BA800D4126BEA226BA46326F5B9 /* Compass@2x.png */,
+				F03C6A5FC1417677D62875B130EB211C /* Compass@3x.png */,
+				DD409D51091659E198B274378BF92761 /* default_marker.png */,
+				E16872895E66501D466BB97FDEAF5E30 /* default_marker@2x.png */,
+				E076C28C5ED7AC5821C85ABA598B457F /* default_marker@3x.png */,
+				883ACA5A91456C0DF913DF54CEA93275 /* mapbox.png */,
+				33FFD747448B05034CD3D8E811812332 /* mapbox@2x.png */,
+				FCEA4CA56693879011FFB014929E42BB /* mapbox@3x.png */,
+				88C952D276CD886285C3804C255DFA38 /* README */,
+				302252C9FC1F74D2A287D87FAF71E03B /* star_tilestream_net.der */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		70609BA22EB417A4C5ADEC74CDF6EEB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				665A092D838A1099BE751880B9E1FFF5 /* Info.plist */,
+				A3E3B389F99CA8141C66BBAC180A913E /* SnapKit.modulemap */,
+				9F543D8851840499BA8E8305EF76B61F /* SnapKit.xcconfig */,
+				2BB2FD2875014FA9E0C5029677BE7314 /* SnapKit-dummy.m */,
+				969C4F2DB91F5E888CD30E0C3683DD59 /* SnapKit-prefix.pch */,
+				DDB8285B810D1C2CB95D6CC9B93C07D5 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DC79809DC50F4B149428B54E75CC1EE3 /* Pods */,
+				E2ACE94100FCCEEDAFA733CCA536E0AC /* Products */,
+				9400FE1147E459B91CE88901D88E5BE0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92E2BE3E09FCAE39A8544B860D87BFF0 /* Pods-Blitz */ = {
+			isa = PBXGroup;
+			children = (
+				68B8086134374732A56D61B25DE20263 /* Info.plist */,
+				3562CA019111E842DE557B857972C758 /* Pods-Blitz.modulemap */,
+				12DA3A384000FCECEB7018712B8D8DEA /* Pods-Blitz-acknowledgements.markdown */,
+				1D9E03934EAF82A8E8FBCD30D5F89638 /* Pods-Blitz-acknowledgements.plist */,
+				EECCE54ECE1BFAE1014D82DF1543B920 /* Pods-Blitz-dummy.m */,
+				D1768D17E3A01CF4AC21EDE4CCE14B36 /* Pods-Blitz-frameworks.sh */,
+				06A266F91EEDA6509534B2E063A04438 /* Pods-Blitz-resources.sh */,
+				C7AAB4381B3CEA6F40C600652C9F1018 /* Pods-Blitz-umbrella.h */,
+				ADA6C285D1AB97925F547DB1CA797EC2 /* Pods-Blitz.debug.xcconfig */,
+				AA9B1A3707927A1E6948069E048E4A65 /* Pods-Blitz.release.xcconfig */,
+			);
+			name = "Pods-Blitz";
+			path = "Target Support Files/Pods-Blitz";
+			sourceTree = "<group>";
+		};
+		9400FE1147E459B91CE88901D88E5BE0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92E2BE3E09FCAE39A8544B860D87BFF0 /* Pods-Blitz */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		945C3E00E1C4EE20BF7E8D82B6286633 /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C6160C7FB0AAA9D079153ABDDCC9B376 /* Frameworks */,
+				3B8CDA487D6AAA6CFFC0EF7D4FDB106B /* Resources */,
+			);
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		A81A0695AEDB8988C6328BA1B6D9B4CE /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				8BE9F0B4E5BCF2435714D85618FA7C39 /* Constraint.swift */,
+				60D0E7D4F94B1A656530F04895C46FB6 /* ConstraintAttributes.swift */,
+				5E669C0DEE99B4BEA65B8DAD710DFD66 /* ConstraintDescription.swift */,
+				2584511AA09FA6581C9CFD9BA31FE6A3 /* ConstraintItem.swift */,
+				627728C02BF8FA7D15BB561C72A07727 /* ConstraintMaker.swift */,
+				8BBD477E3753847552A5C56DA3CA76E3 /* ConstraintRelation.swift */,
+				9A32AB2698D6C21BB00D594689E10E76 /* Debugging.swift */,
+				74E9D7B2F944576B658FC46E92C97532 /* EdgeInsets.swift */,
+				2883B2D9418BC92027AC3BC6E377666E /* LayoutConstraint.swift */,
+				A83416B1D695CFEEA7B5C65CF5BABE98 /* SnapKit.swift */,
+				69973C6B67FBABC19A23E31704E8FA10 /* View+SnapKit.swift */,
+				4B3636B295AB0FBCC15EA827C2E69047 /* ViewController+SnapKit.swift */,
+				70609BA22EB417A4C5ADEC74CDF6EEB3 /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C6160C7FB0AAA9D079153ABDDCC9B376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07174A394689C66BD9FA1CE8E8D8B315 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC79809DC50F4B149428B54E75CC1EE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				945C3E00E1C4EE20BF7E8D82B6286633 /* Mapbox-iOS-SDK */,
+				A81A0695AEDB8988C6328BA1B6D9B4CE /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2ACE94100FCCEEDAFA733CCA536E0AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC84EBA6C3CCDCC463550613A2DF2C6 /* Mapbox.bundle */,
+				58BD1D76C5EC629088082DD74F86D2D6 /* Pods_Blitz.framework */,
+				4260A5C6D2223B946C227D91EACCA4A1 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B8AA6ADDA706FF8AFA7C15D0AAAA00D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E88BA7C32F0CB7EC35D778DBA0FC76E /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E266D5F8F2BADAB0880A7A38AAC72A0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F08253B3DEE11FA555749FD7D7B87F1 /* Pods-Blitz-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DB59219DEF5D393F19F0753F2D9C161 /* Mapbox-iOS-SDK-Mapbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18350CA88BA46CBE4A1796F0A918615E /* Build configuration list for PBXNativeTarget "Mapbox-iOS-SDK-Mapbox" */;
+			buildPhases = (
+				D9A0CDF4EB9708160409881E16AACD2E /* Sources */,
+				051B9484CB25C8E6AC178354CEC786E8 /* Frameworks */,
+				DE0920D1A0C39516A66B89971588F960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mapbox-iOS-SDK-Mapbox";
+			productName = "Mapbox-iOS-SDK-Mapbox";
+			productReference = CAC84EBA6C3CCDCC463550613A2DF2C6 /* Mapbox.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		51D9B5C672AE37AC78319392F5A0F449 /* Pods-Blitz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76E26B1484BE636E3AF0B7E38AE6F42D /* Build configuration list for PBXNativeTarget "Pods-Blitz" */;
+			buildPhases = (
+				A15230274A8BF1328AF20E95ED556DA9 /* Sources */,
+				02AA166F8628CCCBF0CF4716DB5C6993 /* Frameworks */,
+				E266D5F8F2BADAB0880A7A38AAC72A0A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A27FF58729F09A406F6080ABD5D1C46B /* PBXTargetDependency */,
+				BBB612E3DDA8D4E704E887B8842D7FA5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Blitz";
+			productName = "Pods-Blitz";
+			productReference = 58BD1D76C5EC629088082DD74F86D2D6 /* Pods_Blitz.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F16F29AEF1DDD761FE6F5DE9604FF23A /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8D212FD5B5C6957F1A93F27E48474E /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				891D4EF881BF6A8CB24F5CBF53CFD67D /* Sources */,
+				C874EE24843B368D2C7968F658118D5A /* Frameworks */,
+				B8AA6ADDA706FF8AFA7C15D0AAAA00D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 4260A5C6D2223B946C227D91EACCA4A1 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E2ACE94100FCCEEDAFA733CCA536E0AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DB59219DEF5D393F19F0753F2D9C161 /* Mapbox-iOS-SDK-Mapbox */,
+				51D9B5C672AE37AC78319392F5A0F449 /* Pods-Blitz */,
+				F16F29AEF1DDD761FE6F5DE9604FF23A /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE0920D1A0C39516A66B89971588F960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4105F60998DB316B7E205F0F58E8C621 /* api_mapbox_com-digicert.der in Resources */,
+				8BC6C182AC595289B59FACD63C86218B /* api_mapbox_com-geotrust.der in Resources */,
+				B43BD2816013609E80E66FEEB585FF96 /* Compass.png in Resources */,
+				2F3EF98D44B18A5738B996EB7851B102 /* Compass@2x.png in Resources */,
+				003AF3C120288E037C48576B2243E471 /* Compass@3x.png in Resources */,
+				4E86E4895AED1D572EF89E302F6172FB /* default_marker.png in Resources */,
+				A1C0DC366F36DA278187B54336AB6182 /* default_marker@2x.png in Resources */,
+				0CAC0CC4DCAC675916FCBCA05B638C9F /* default_marker@3x.png in Resources */,
+				22A156810076F6D1A7E3B62042878526 /* mapbox.png in Resources */,
+				196AB93D6F91BD3B8A662E3BABF3D5AE /* mapbox@2x.png in Resources */,
+				5D896DFB8B4FAA92F11E7346A0330E3B /* mapbox@3x.png in Resources */,
+				89CD532FBF48416A5AEB3725C68AA5F6 /* README in Resources */,
+				45627E38A4C02F4306763B7180CA5707 /* star_tilestream_net.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891D4EF881BF6A8CB24F5CBF53CFD67D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2E6F60552CDA17FAED3CCBCA9C2A9A /* Constraint.swift in Sources */,
+				353B54C6860570D5EAD260AAACDB262E /* ConstraintAttributes.swift in Sources */,
+				92A9118401E9D945DCC5FE84F36B0D1B /* ConstraintDescription.swift in Sources */,
+				47A9F9BD87FC2D2177ACCC5389C13022 /* ConstraintItem.swift in Sources */,
+				D7A60CD80AE4274FC24810AB2F7002E3 /* ConstraintMaker.swift in Sources */,
+				36A47FF84D2DA2AB4AA3FA6AE79DDE02 /* ConstraintRelation.swift in Sources */,
+				075CA9CE6701899DCE838F62C54DDA7A /* Debugging.swift in Sources */,
+				FF27E764262648B49ABF55AC8409B990 /* EdgeInsets.swift in Sources */,
+				49B536E2B299F526B962C80B9B536720 /* LayoutConstraint.swift in Sources */,
+				A5BAB2D0C1F961788A64C1B410F9890D /* SnapKit-dummy.m in Sources */,
+				246B83FF4233474C7CE63011CBE8CB02 /* SnapKit.swift in Sources */,
+				B3892B94666972C4D5490834681ED751 /* View+SnapKit.swift in Sources */,
+				734BE08E85B667325E5AB8FF0C746493 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15230274A8BF1328AF20E95ED556DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A42E014F2BDAB654091D9374CB1120 /* Pods-Blitz-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A0CDF4EB9708160409881E16AACD2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A27FF58729F09A406F6080ABD5D1C46B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mapbox-iOS-SDK-Mapbox";
+			target = 2DB59219DEF5D393F19F0753F2D9C161 /* Mapbox-iOS-SDK-Mapbox */;
+			targetProxy = 211A24192517F655392E3E8419468363 /* PBXContainerItemProxy */;
+		};
+		BBB612E3DDA8D4E704E887B8842D7FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = F16F29AEF1DDD761FE6F5DE9604FF23A /* SnapKit */;
+			targetProxy = 0A0ECCA7520527D559D81C25C1BE8D0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06238F5F7BE354A98A05700C4E4CE243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Mapbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552FA72B715DAAA73405B3125570709A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA6C285D1AB97925F547DB1CA797EC2 /* Pods-Blitz.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Blitz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blitz/Pods-Blitz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Blitz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B08588101E23F05C1CC464C6967480C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F543D8851840499BA8E8305EF76B61F /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		927671D7B3CCE4610B9206AC47E89CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F543D8851840499BA8E8305EF76B61F /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAE2CE9014F8FB8C0B010076E5C6DF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9B1A3707927A1E6948069E048E4A65 /* Pods-Blitz.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Blitz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blitz/Pods-Blitz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Blitz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4A2199EF0363F38958A1B4A108EF9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Mapbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18350CA88BA46CBE4A1796F0A918615E /* Build configuration list for PBXNativeTarget "Mapbox-iOS-SDK-Mapbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A2199EF0363F38958A1B4A108EF9B9 /* Debug */,
+				06238F5F7BE354A98A05700C4E4CE243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8D212FD5B5C6957F1A93F27E48474E /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B08588101E23F05C1CC464C6967480C /* Debug */,
+				927671D7B3CCE4610B9206AC47E89CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76E26B1484BE636E3AF0B7E38AE6F42D /* Build configuration list for PBXNativeTarget "Pods-Blitz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552FA72B715DAAA73405B3125570709A /* Debug */,
+				AAE2CE9014F8FB8C0B010076E5C6DF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

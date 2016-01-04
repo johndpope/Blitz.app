@@ -1,0 +1,13 @@
+PODS:
+  - Mapbox-iOS-SDK (3.0.1)
+  - SnapKit (0.18.0)
+
+DEPENDENCIES:
+  - Mapbox-iOS-SDK
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: 61e79f3dd8432617bd1a66b2d7273ab5ce923ca9
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+
+COCOAPODS: 0.39.0
