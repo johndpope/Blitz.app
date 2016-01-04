@@ -7,6 +7,7 @@ target 'Blitz' do
 
 pod 'Mapbox-iOS-SDK'
 pod 'SnapKit'
+pod 'pop', '~> 1.0'
 
 end
 

@@ -10,12 +10,12 @@ import UIKit
 import Mapbox
 import SnapKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, MenuButtonDataSource, MenuButtonDelegate
 {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let mapView = MGLMapView(frame: view.bounds)
+        let mapView = MGLMapView(frame: view.bounds) // styleURL: NSURL(string: "mapbox://styles/umutbozkurt/ciiz9ym1y00pj2lkn4vkpvifd")
         mapView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         mapView.attributionButton.hidden = true
         
@@ -25,20 +25,23 @@ class ViewController: UIViewController
             zoomLevel: 12, animated: false)
         view.addSubview(mapView)
         
-        let menuButton = LBHamburgerButton(
-            frame: CGRectMake(0, 0, 60, 60),
+        let menuButton = MenuButton(
+            frame: CGRectMake(0, 0, 50, 50),
             type: LBHamburgerButtonType.CloseButton,
-            lineWidth: 30, lineHeight: 3, lineSpacing: 8,
-            lineCenter: CGPoint(x: 30, y: 30), color: UIColor.whiteColor()
+            lineWidth: 25, lineHeight: 3, lineSpacing: 5,
+            lineCenter: CGPoint(x: 25, y: 25), color: UIColor.whiteColor()
         )
+        
+        menuButton.delegate = self
+        menuButton.dataSource = self
         
         view.addSubview(menuButton)
         
         menuButton.snp_makeConstraints { (make) -> Void in
             make.right.equalTo(view).offset(-15)
             make.bottom.equalTo(view).offset(-15)
-            make.size.width.equalTo(60)
-            make.size.height.equalTo(60)
+            make.size.width.equalTo(50)
+            make.size.height.equalTo(50)
         }
         
         menuButton.hamburgerAnimationDuration = 0.35
@@ -50,5 +53,20 @@ class ViewController: UIViewController
     func toggle(sender: AnyObject!)
     {
         (sender as! LBHamburgerButton).switchState()
+    }
+    
+    func numberOfButtons(menuButton: MenuButton) -> Int
+    {
+        return 2
+    }
+    
+    func itemForIndex(index: Int) -> MenuItem
+    {
+        return MenuItem(image: UIImage(named: "german dream eko.jpg")!)
+    }
+    
+    func menuButton(menuButton: MenuButton, didSelectItemAtIndex: Int)
+    {
+        
     }
 }
