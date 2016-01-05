@@ -22,11 +22,12 @@ class MenuItem: UIButton
         }
     }
     
-    init(image: UIImage)
+    init(image: UIImage, highlightedImage: UIImage)
     {
         super.init(frame: CGRectZero)
         self.backgroundColor = UIColor(red: 0/255, green: 120/255, blue: 166/255, alpha: 1)
-        self.imageView?.image = image
+        self.setImage(image, forState: UIControlState.Normal)
+        self.setImage(highlightedImage, forState: UIControlState.Highlighted)
     }
     
     override var frame: CGRect

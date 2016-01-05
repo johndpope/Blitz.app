@@ -37,7 +37,7 @@ class MenuButton: LBHamburgerButton
             lineCenter: CGPoint(x: 25, y: 25), color: UIColor.whiteColor()
         )
         
-        hamburgerAnimationDuration = 0.35
+        hamburgerAnimationDuration = 0.25
         layer.cornerRadius = bounds.size.width / 2
         backgroundColor = UIColor(red: 0/255, green: 120/255, blue: 166/255, alpha: 1)
     }
@@ -49,9 +49,11 @@ class MenuButton: LBHamburgerButton
     
     override func switchState()
     {
-        for var index = 0; index < getItems().count; ++index
+        let items = getItems()
+        
+        for index in 0..<items.count
         {
-            let item = getItems()[index]
+            let item = items[index]
             item.parent = self
             
             let initialFrame = self.frame
@@ -95,7 +97,7 @@ class MenuButton: LBHamburgerButton
         {
             let count = dataSource?.numberOfButtons(self) ?? 0
             
-            for index in 1...count
+            for index in 0..<count
             {
                 items.append((dataSource?.itemForIndex(index))!)
             }
@@ -108,7 +110,7 @@ class MenuButton: LBHamburgerButton
     {
         let items = getItems()
         
-        for index in 0...items.count
+        for index in 0..<items.count
         {
             if items[index] == menuItem
             {

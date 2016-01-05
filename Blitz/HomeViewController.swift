@@ -7,16 +7,20 @@
 //
 
 import UIKit
-import Mapbox
 import SnapKit
 
 class HomeViewController: UIViewController, MenuButtonDataSource, MenuButtonDelegate
 {
+    let menuItems: Array<MenuItem> = [
+        MenuItem(image: UIImage.listPinsImage(), highlightedImage: UIImage.listPinsImageHighlighted()),
+        MenuItem(image: UIImage.addPinImage(), highlightedImage: UIImage.addPinImageHighlighted())
+    ]
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        let mapView = MGLMapView(frame: view.bounds)
+        let mapView = MapView(frame: view.bounds)
         view.addSubview(mapView)
         
         let menuButton = MenuButton(frame: CGRectMake(0, 0, 50, 50))
@@ -41,12 +45,12 @@ class HomeViewController: UIViewController, MenuButtonDataSource, MenuButtonDele
     
     func numberOfButtons(menuButton: MenuButton) -> Int
     {
-        return 2
+        return menuItems.count
     }
     
     func itemForIndex(index: Int) -> MenuItem
     {
-        return MenuItem(image: UIImage(named: "german dream eko.jpg")!)
+        return menuItems[index]
     }
     
     func menuButton(menuButton: MenuButton, didSelectItemAtIndex index: Int)
