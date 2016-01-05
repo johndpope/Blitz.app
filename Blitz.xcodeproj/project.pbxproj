@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C1AB0231C39A6420025E946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AB0221C39A6420025E946 /* AppDelegate.swift */; };
-		2C1AB0251C39A6420025E946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AB0241C39A6420025E946 /* ViewController.swift */; };
 		2C1AB0281C39A6420025E946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1AB0261C39A6420025E946 /* Main.storyboard */; };
 		2C1AB02A1C39A6420025E946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1AB0291C39A6420025E946 /* Assets.xcassets */; };
 		2C1AB02D1C39A6420025E946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1AB02B1C39A6420025E946 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		2CE1CB271C3A7C9900096498 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB261C3A7C9900096498 /* MenuButton.swift */; };
 		2CE1CB2A1C3A803800096498 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB291C3A803800096498 /* MenuItem.swift */; };
 		2CE1CB2C1C3B035500096498 /* german dream eko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1CB2B1C3B035500096498 /* german dream eko.jpg */; };
+		2CE1CB2F1C3B4D8B00096498 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB2E1C3B4D8B00096498 /* HomeViewController.swift */; };
+		2CE1CB321C3B502300096498 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB311C3B502300096498 /* MapView.swift */; };
 		3329736452A1DB8F4A0D22E7 /* Pods_Blitz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D7A10AED81837B4013B7E /* Pods_Blitz.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,6 @@
 		1F3D7A10AED81837B4013B7E /* Pods_Blitz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blitz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1AB01F1C39A6420025E946 /* Blitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1AB0221C39A6420025E946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C1AB0241C39A6420025E946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C1AB0271C39A6420025E946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C1AB0291C39A6420025E946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1AB02C1C39A6420025E946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +72,8 @@
 		2CE1CB261C3A7C9900096498 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		2CE1CB291C3A803800096498 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2CE1CB2B1C3B035500096498 /* german dream eko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "german dream eko.jpg"; sourceTree = "<group>"; };
+		2CE1CB2E1C3B4D8B00096498 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2CE1CB311C3B502300096498 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		740EFD7F97BC98A9AED5571E /* Pods-Blitz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blitz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blitz/Pods-Blitz.release.xcconfig"; sourceTree = "<group>"; };
 		7CAE121C5B59FAF4F7CE7E0C /* Pods-Blitz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blitz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blitz/Pods-Blitz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				2CE1CB231C3A790600096498 /* Views */,
+				2CE1CB2D1C3B4D5600096498 /* ViewControllers */,
 				2CE1CB091C39AD2F00096498 /* Settings.bundle */,
 				2C1AB0221C39A6420025E946 /* AppDelegate.swift */,
-				2C1AB0241C39A6420025E946 /* ViewController.swift */,
 				2CE1CB2B1C3B035500096498 /* german dream eko.jpg */,
 				2C1AB0261C39A6420025E946 /* Main.storyboard */,
 				2C1AB0291C39A6420025E946 /* Assets.xcassets */,
@@ -170,6 +172,7 @@
 		2CE1CB231C3A790600096498 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CE1CB301C3B501100096498 /* Map */,
 				2CE1CB281C3A802500096498 /* Menu */,
 			);
 			name = Views;
@@ -182,6 +185,22 @@
 				2CE1CB291C3A803800096498 /* MenuItem.swift */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		2CE1CB2D1C3B4D5600096498 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1CB2E1C3B4D8B00096498 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2CE1CB301C3B501100096498 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1CB311C3B502300096498 /* MapView.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		4494E09D7F64C023E646CB4F /* Pods */ = {
@@ -388,10 +407,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE1CB271C3A7C9900096498 /* MenuButton.swift in Sources */,
-				2C1AB0251C39A6420025E946 /* ViewController.swift in Sources */,
+				2CE1CB321C3B502300096498 /* MapView.swift in Sources */,
 				2C1AB0231C39A6420025E946 /* AppDelegate.swift in Sources */,
 				2CE1CB181C39DC3D00096498 /* LBHamburgerButton.swift in Sources */,
 				2CE1CB2A1C3A803800096498 /* MenuItem.swift in Sources */,
+				2CE1CB2F1C3B4D8B00096498 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

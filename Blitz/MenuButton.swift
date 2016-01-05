@@ -17,7 +17,7 @@ protocol MenuButtonDataSource
 
 protocol MenuButtonDelegate
 {
-    func menuButton(menuButton: MenuButton, didSelectItemAtIndex: Int)
+    func menuButton(menuButton: MenuButton, didSelectItemAtIndex index: Int)
 }
 
 class MenuButton: LBHamburgerButton
@@ -25,6 +25,27 @@ class MenuButton: LBHamburgerButton
     var delegate: MenuButtonDelegate?
     var dataSource: MenuButtonDataSource?
     var items: [MenuItem] = []
+    
+    init(frame: CGRect)
+    {
+        super.init(
+            frame: frame,
+            type: LBHamburgerButtonType.CloseButton,
+            lineWidth: 25,
+            lineHeight: 3,
+            lineSpacing: 5,
+            lineCenter: CGPoint(x: 25, y: 25), color: UIColor.whiteColor()
+        )
+        
+        hamburgerAnimationDuration = 0.35
+        layer.cornerRadius = bounds.size.width / 2
+        backgroundColor = UIColor(red: 0/255, green: 120/255, blue: 166/255, alpha: 1)
+    }
+
+    required init?(coder: NSCoder)
+    {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func switchState()
     {
