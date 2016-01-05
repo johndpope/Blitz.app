@@ -596,6 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.umut.Blitz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -632,6 +633,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.umut.Blitz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

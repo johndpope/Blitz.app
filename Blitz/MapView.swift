@@ -17,6 +17,7 @@ class MapView: MGLMapView
         
         autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         attributionButton.hidden = true
+        logoView.alpha = 0.6
         
         setCenterCoordinate(CLLocationCoordinate2D(latitude: 40.7326808,
             longitude: -73.9843407),
