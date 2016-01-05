@@ -24,7 +24,6 @@ class MenuButton: LBHamburgerButton
 {
     var delegate: MenuButtonDelegate?
     var dataSource: MenuButtonDataSource?
-    var items: [MenuItem] = []
     
     init(frame: CGRect)
     {
@@ -93,14 +92,12 @@ class MenuButton: LBHamburgerButton
     
     func getItems() -> Array<MenuItem>
     {
-        if items.isEmpty
+        let count = dataSource?.numberOfButtons(self) ?? 0
+        var items: [MenuItem] = []
+        
+        for index in 0..<count
         {
-            let count = dataSource?.numberOfButtons(self) ?? 0
-            
-            for index in 0..<count
-            {
-                items.append((dataSource?.itemForIndex(index))!)
-            }
+            items.append((dataSource?.itemForIndex(index))!)
         }
         
         return items

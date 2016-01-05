@@ -8,14 +8,10 @@
 
 import UIKit
 import SnapKit
+import pop
 
-class HomeViewController: UIViewController, MenuButtonDataSource, MenuButtonDelegate
+class HomeViewController: BaseViewController, MenuButtonDelegate
 {
-    let menuItems: Array<MenuItem> = [
-        MenuItem(image: UIImage.listPinsImage(), highlightedImage: UIImage.listPinsImageHighlighted()),
-        MenuItem(image: UIImage.addPinImage(), highlightedImage: UIImage.addPinImageHighlighted())
-    ]
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -42,19 +38,16 @@ class HomeViewController: UIViewController, MenuButtonDataSource, MenuButtonDele
     {
         (sender as! LBHamburgerButton).switchState()
     }
-    
-    func numberOfButtons(menuButton: MenuButton) -> Int
-    {
-        return menuItems.count
-    }
-    
-    func itemForIndex(index: Int) -> MenuItem
-    {
-        return menuItems[index]
-    }
-    
+
     func menuButton(menuButton: MenuButton, didSelectItemAtIndex index: Int)
     {
-        print(index)
+        let item = menuItems[index]
+        
+        performSegueWithIdentifier("addBlitz", sender: item)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        transitionView = sender as? UIView
     }
 }
