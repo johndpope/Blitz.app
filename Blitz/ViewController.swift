@@ -67,6 +67,6 @@ class ViewController: UIViewController, MenuButtonDataSource, MenuButtonDelegate
     
     func menuButton(menuButton: MenuButton, didSelectItemAtIndex: Int)
     {
-        
+        print(didSelectItemAtIndex)
     }
 }

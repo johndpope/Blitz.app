@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 protocol MenuButtonDataSource
 {
@@ -30,23 +31,39 @@ class MenuButton: LBHamburgerButton
         for var index = 0; index < getItems().count; ++index
         {
             let item = getItems()[index]
+            item.parent = self
             
+            let initialFrame = self.frame
+            let targetFrame = CGRectMake(
+                self.frame.origin.x,
+                self.frame.origin.y - CGFloat(index + 1) * (MenuItem.height + MenuItem.margin),
+                MenuItem.width,
+                MenuItem.height
+            )
+            
+            let animation = POPSpringAnimation(propertyNamed: kPOPViewFrame)
+
             if hamburgerState == LBHamburgerButtonState.Hamburger
             {
-                item.frame = CGRectMake(
-                    self.frame.origin.x,
-                    self.frame.origin.y - CGFloat(index + 1) * (MenuItem.height + MenuItem.margin),
-                    MenuItem.width,
-                    MenuItem.height
-                )
-                
-                item.layer.cornerRadius = self.bounds.width / 2
-                self.superview?.addSubview(item)
+                animation.fromValue = NSValue(CGRect: initialFrame)
+                animation.toValue = NSValue(CGRect: targetFrame)
+                self.superview?.insertSubview(item, belowSubview: self)
             }
             else
             {
-                item.removeFromSuperview()
+                animation.fromValue = NSValue(CGRect: targetFrame)
+                animation.toValue = NSValue(CGRect: initialFrame)
+                animation.completionBlock = {(anim, completed) in
+                    item.removeFromSuperview()
+                }
             }
+            
+            animation.springSpeed = CGFloat(30)
+            animation.springBounciness = CGFloat(15)
+            animation.dynamicsFriction = CGFloat(30)
+            
+            item.pop_removeAllAnimations()
+            item.pop_addAnimation(animation, forKey: "spring")
         }
         super.switchState()
     }
@@ -66,13 +83,13 @@ class MenuButton: LBHamburgerButton
         return items
     }
     
-    func didTappedMenuItem(menuItem: MenuItem)
+    func didTapMenuItem(menuItem: MenuItem)
     {
-        let count = dataSource?.numberOfButtons(self) ?? 0
+        let items = getItems()
         
-        for index in 0...count
+        for index in 0...items.count
         {
-            if dataSource?.itemForIndex(index) == menuItem
+            if items[index] == menuItem
             {
                 delegate?.menuButton(self, didSelectItemAtIndex: index)
                 break

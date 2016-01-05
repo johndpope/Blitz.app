@@ -15,14 +15,10 @@ class MenuItem: UIButton
     static let margin: CGFloat = 10
     
     weak var parent: MenuButton?
-    
-    override func sendActionsForControlEvents(controlEvents: UIControlEvents)
     {
-        super.sendActionsForControlEvents(controlEvents)
-        
-        if controlEvents == UIControlEvents.TouchUpInside
+        didSet
         {
-            parent?.didTappedMenuItem(self)
+            self.addTarget(parent, action: "didTapMenuItem:", forControlEvents: UIControlEvents.TouchUpInside)
         }
     }
     
@@ -39,6 +35,11 @@ class MenuItem: UIButton
         {
             self.layer.cornerRadius = frame.size.width / 2
         }
+    }
+    
+    func anan()
+    {
+        print("anan")
     }
 
     required init?(coder aDecoder: NSCoder) {
