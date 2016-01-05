@@ -126,6 +126,8 @@ class LBHamburgerButton: UIButton {
         _lineArray = [ topLine, middleLine, bottomLine]
         
         for layer in _lineArray {
+            layer.cornerRadius = lineHeight / 2
+            layer.masksToBounds = true
             self.layer.addSublayer(layer)
         }
         
