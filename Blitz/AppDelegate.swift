@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import CoreLocation
 import Onboard
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 {
 
     var window: UIWindow?
@@ -21,14 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         let userIsOnboarded = NSUserDefaults.standardUserDefaults().boolForKey(userOnboardedKey)
         
-        onBoard()
-        
         if !userIsOnboarded
         {
-            
+            onBoard()
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: userOnboardedKey)
         }
-        
         
         return true
     }
@@ -40,7 +38,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     func onBoard()
     {
-        window?.rootViewController = OnboardingContainerViewController()
+        window?.rootViewController = OnboardingContainerViewController(completionHandler: { (onboardingController) -> Void in
+            self.setupNavigationConroller()
+        })
+    }
+    
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus)
+    {
+        
     }
 }
 

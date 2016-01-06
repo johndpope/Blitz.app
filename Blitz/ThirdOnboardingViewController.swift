@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import CoreLocation
 import Onboard
 import pop
 
 class ThirdOnboardingViewController: OnboardingContentViewController
 {
+    let manager = CLLocationManager()
+    var finishOnboardingHandler: ((onboardingController: OnboardingContentViewController) -> Void)?
+    
     init()
     {
         let title = "Location Services"
         let body = "Blitz needs permission to access your location whenever necessary."
         
-        super.init(title: title, body: body, image: UIImage.logoImage(), buttonText: "Ask for Permission") { () -> Void in
+        super.init(title: title, body: body, image: UIImage.logoImage(), buttonText: "Ask for Permission", action: nil)
+        buttonActionHandler = { () -> Void in
+            if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.NotDetermined
+            {
+                self.manager.delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                self.manager.requestWhenInUseAuthorization()
+            }
             
+            self.finishOnboardingHandler?(onboardingController: self)
         }
         view.backgroundColor = UIColor.blitzLightBlueColor()
         

@@ -13,13 +13,15 @@ class OnboardingContainerViewController: OnboardingViewController
 {
     let maxWidth: CGFloat = 360
     
-    init()
+    init(completionHandler: (onboardingController: OnboardingContentViewController) -> Void)
     {
         let contents = [
             FirstOnboardingViewController(),
             SecondOnboardingViewController(),
             ThirdOnboardingViewController()
         ]
+        
+        (contents.last as! ThirdOnboardingViewController).finishOnboardingHandler = completionHandler
         
         super.init(backgroundImage: nil, contents: contents)
         
@@ -30,6 +32,7 @@ class OnboardingContainerViewController: OnboardingViewController
         iconWidth = 128 + (UIScreen.mainScreen().bounds.size.width - maxWidth) / 2
         
         shouldMaskBackground = false
+        fadePageControlOnLastPage = true
         
         titleFontName = "BrandonGrotesque-Black"
         titleFontSize = 50
