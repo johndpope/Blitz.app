@@ -29,4 +29,14 @@ extension UIImage
     {
         return UIImage(named: "add pin highlighted")!
     }
+    
+    class func cameraImage() -> UIImage
+    {
+        return UIImage(named: "camera icon")!
+    }
+    
+    class func photoLibraryImage() -> UIImage
+    {
+        return UIImage(named: "photo library icon")!
+    }
 }

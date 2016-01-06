@@ -25,6 +25,8 @@
 		2CE1CB4D1C3C824E00096498 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB4C1C3C824E00096498 /* NavigationControllerDelegate.swift */; };
 		2CE1CB501C3C849100096498 /* AddBlitzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB4F1C3C849100096498 /* AddBlitzViewController.swift */; };
 		2CE1CB521C3D0C2600096498 /* UIColor+Blitz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB511C3D0C2600096498 /* UIColor+Blitz.swift */; };
+		2CE1CB541C3D293F00096498 /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB531C3D293F00096498 /* CameraButton.swift */; };
+		2CE1CB561C3D295500096498 /* PhotoLibraryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1CB551C3D295500096498 /* PhotoLibraryButton.swift */; };
 		3329736452A1DB8F4A0D22E7 /* Pods_Blitz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D7A10AED81837B4013B7E /* Pods_Blitz.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		2CE1CB4C1C3C824E00096498 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		2CE1CB4F1C3C849100096498 /* AddBlitzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBlitzViewController.swift; sourceTree = "<group>"; };
 		2CE1CB511C3D0C2600096498 /* UIColor+Blitz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Blitz.swift"; sourceTree = "<group>"; };
+		2CE1CB531C3D293F00096498 /* CameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
+		2CE1CB551C3D295500096498 /* PhotoLibraryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryButton.swift; sourceTree = "<group>"; };
 		740EFD7F97BC98A9AED5571E /* Pods-Blitz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blitz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blitz/Pods-Blitz.release.xcconfig"; sourceTree = "<group>"; };
 		7CAE121C5B59FAF4F7CE7E0C /* Pods-Blitz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blitz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blitz/Pods-Blitz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +190,8 @@
 				2CE1CB311C3B502300096498 /* MapView.swift */,
 				2CE1CB261C3A7C9900096498 /* MenuButton.swift */,
 				2CE1CB291C3A803800096498 /* MenuItem.swift */,
+				2CE1CB531C3D293F00096498 /* CameraButton.swift */,
+				2CE1CB551C3D295500096498 /* PhotoLibraryButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -436,7 +442,9 @@
 				2CE1CB321C3B502300096498 /* MapView.swift in Sources */,
 				2C1AB0231C39A6420025E946 /* AppDelegate.swift in Sources */,
 				2CE1CB4B1C3C7F8100096498 /* BaseViewController.swift in Sources */,
+				2CE1CB561C3D295500096498 /* PhotoLibraryButton.swift in Sources */,
 				2CE1CB181C39DC3D00096498 /* LBHamburgerButton.swift in Sources */,
+				2CE1CB541C3D293F00096498 /* CameraButton.swift in Sources */,
 				2CE1CB2A1C3A803800096498 /* MenuItem.swift in Sources */,
 				2CE1CB2F1C3B4D8B00096498 /* HomeViewController.swift in Sources */,
 				2CE1CB521C3D0C2600096498 /* UIColor+Blitz.swift in Sources */,

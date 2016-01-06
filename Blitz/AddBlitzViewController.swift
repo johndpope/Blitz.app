@@ -19,6 +19,12 @@ class AddBlitzViewController: BaseViewController
         menuButton!.placeLowerRight(ofView: view)
         menuButton!.addTarget(self, action: "dismiss:", forControlEvents: .TouchUpInside)
         menuButton!.switchState()
+        
+        let cameraButton = CameraButton()
+        cameraButton.placeUpperMiddle(ofView: view)
+        
+        let libraryButton = PhotoLibraryButton()
+        libraryButton.placeLowerMiddle(ofView: view)
     }
     
     func dismiss(sender: AnyObject?)
