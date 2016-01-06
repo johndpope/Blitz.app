@@ -39,4 +39,9 @@ extension UIImage
     {
         return UIImage(named: "photo library icon")!
     }
+    
+    class func logoImage() -> UIImage
+    {
+        return UIImage(named: "logo")!
+    }
 }
