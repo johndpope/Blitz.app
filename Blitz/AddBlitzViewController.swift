@@ -29,6 +29,7 @@ class AddBlitzViewController: BaseViewController
     
     func dismiss(sender: AnyObject?)
     {
-        
+        transitionView = sender as? UIView
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

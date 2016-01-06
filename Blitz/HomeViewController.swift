@@ -38,7 +38,12 @@ class HomeViewController: BaseViewController, MenuButtonDelegate
     {
         let item = menuItems[index]
         
+        CATransaction.begin()
         performSegueWithIdentifier("addBlitz", sender: item)
+        CATransaction.setCompletionBlock { () -> Void in
+            menuButton.switchState()
+        }
+        CATransaction.commit()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
