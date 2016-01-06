@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import pop
 
 class AddBlitzViewController: BaseViewController
 {
-    
+    override func viewDidAppear(animated: Bool)
+    {
+
+    }
 }

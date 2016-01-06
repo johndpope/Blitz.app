@@ -2,31 +2,26 @@
 //  UIColor+Blitz.swift
 //  Blitz
 //
-//  Created by Umut Bozkurt on 05/01/16.
+//  Created by Umut Bozkurt on 06/01/16.
 //  Copyright © 2016 Umut Bozkurt. All rights reserved.
 //
 
 import UIKit
 
-extension UIImage
+extension UIColor
 {
-    class func listPinsImage() -> UIImage
+    class func blitzYellowColor() -> UIColor
     {
-        return UIImage(named: "list pins")!
+        return UIColor(red: 248/255, green: 255/255, blue: 1/255, alpha: 1)
     }
     
-    class func listPinsImageHighlighted() -> UIImage
+    class func blitzLightBlueColor() -> UIColor
     {
-        return UIImage(named: "list pins highlighted")!
+        return UIColor(red: 81/255, green: 216/255, blue: 255/255, alpha: 1)
     }
     
-    class func addPinImage() -> UIImage
+    class func blitzDarkBlueColor() -> UIColor
     {
-        return UIImage(named: "add pin")!
-    }
-    
-    class func addPinImageHighlighted() -> UIImage
-    {
-        return UIImage(named: "add pin highlighted")!
+        return UIColor(red: 0/255, green: 120/255, blue: 160/255, alpha: 1)
     }
 }

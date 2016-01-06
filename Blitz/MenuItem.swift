@@ -25,7 +25,7 @@ class MenuItem: UIButton
     init(image: UIImage, highlightedImage: UIImage)
     {
         super.init(frame: CGRectZero)
-        self.backgroundColor = UIColor(red: 0/255, green: 120/255, blue: 166/255, alpha: 1)
+        self.backgroundColor = UIColor.blitzDarkBlueColor()
         self.setImage(image, forState: UIControlState.Normal)
         self.setImage(highlightedImage, forState: UIControlState.Highlighted)
     }
@@ -36,11 +36,6 @@ class MenuItem: UIButton
         {
             self.layer.cornerRadius = frame.size.width / 2
         }
-    }
-    
-    func anan()
-    {
-        print("anan")
     }
 
     required init?(coder aDecoder: NSCoder) {

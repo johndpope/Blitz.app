@@ -8,6 +8,7 @@
 // http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app
 
 import UIKit
+import pop
 
 class ExpandTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
 {
@@ -15,7 +16,7 @@ class ExpandTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval
     {
-        return 0.3;
+        return 0.4;
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning)
@@ -25,10 +26,10 @@ class ExpandTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let containerView = transitionContext.containerView()
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! BaseViewController
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! BaseViewController
-        
+
         let button = fromViewController.transitionView!
         containerView!.addSubview(toViewController.view)
-        
+
         let circleMaskPathInitial = UIBezierPath(ovalInRect: button.frame)
         let extremePoint = CGPointMake(0, 0)  // extreme is upper left corner in our case
         let radius = 2 * sqrt(abs(pow(extremePoint.x + button.frame.origin.x, 2) - pow(extremePoint.y + button.frame.origin.y, 2)))
@@ -41,9 +42,16 @@ class ExpandTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let maskLayerAnimation = CABasicAnimation(keyPath: "path")
         maskLayerAnimation.fromValue = circleMaskPathInitial.CGPath
         maskLayerAnimation.toValue = circleMaskPathFinal.CGPath
-        maskLayerAnimation.duration = self.transitionDuration(transitionContext)
+        maskLayerAnimation.duration = transitionDuration(transitionContext)
+        maskLayerAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         maskLayerAnimation.delegate = self
         maskLayer.addAnimation(maskLayerAnimation, forKey: "path")
+        
+        let backgroundColorAnimation = POPBasicAnimation(propertyNamed: kPOPViewBackgroundColor)
+        backgroundColorAnimation.toValue = UIColor.whiteColor()
+        backgroundColorAnimation.duration = transitionDuration(transitionContext) * 1.2
+        backgroundColorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        toViewController.view.pop_addAnimation(backgroundColorAnimation, forKey: "background")
     }
     
     override func animationDidStop(anim: CAAnimation, finished flag: Bool)

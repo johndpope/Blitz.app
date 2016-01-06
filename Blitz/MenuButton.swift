@@ -38,7 +38,7 @@ class MenuButton: LBHamburgerButton
         
         hamburgerAnimationDuration = 0.25
         layer.cornerRadius = bounds.size.width / 2
-        backgroundColor = UIColor(red: 0/255, green: 120/255, blue: 166/255, alpha: 1)
+        backgroundColor = UIColor.blitzDarkBlueColor()
     }
 
     required init?(coder: NSCoder)

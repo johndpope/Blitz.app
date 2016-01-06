@@ -16,6 +16,11 @@ class HomeViewController: BaseViewController, MenuButtonDelegate
     {
         super.viewDidLoad()
         
+        menuItems = [
+            MenuItem(image: UIImage.listPinsImage(), highlightedImage: UIImage.listPinsImageHighlighted()),
+            MenuItem(image: UIImage.addPinImage(), highlightedImage: UIImage.addPinImageHighlighted())
+        ]
+        
         let mapView = MapView(frame: view.bounds)
         view.addSubview(mapView)
         
