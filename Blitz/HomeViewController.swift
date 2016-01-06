@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import SnapKit
-import pop
 
 class HomeViewController: BaseViewController, MenuButtonDelegate
 {
@@ -24,24 +22,16 @@ class HomeViewController: BaseViewController, MenuButtonDelegate
         let mapView = MapView(frame: view.bounds)
         view.addSubview(mapView)
         
-        let menuButton = MenuButton(frame: CGRectMake(0, 0, 50, 50))
-        menuButton.delegate = self
-        menuButton.dataSource = self
-        view.addSubview(menuButton)
-        
-        menuButton.snp_makeConstraints { (make) -> Void in
-            make.right.equalTo(view).offset(-15)
-            make.bottom.equalTo(view).offset(-15)
-            make.size.width.equalTo(50)
-            make.size.height.equalTo(50)
-        }
-        
-        menuButton.addTarget(self, action: "toggle:", forControlEvents: .TouchUpInside)
+        menuButton = MenuButton(type: MenuButtonType.CloseButton)
+        menuButton!.delegate = self
+        menuButton!.dataSource = self
+        menuButton!.placeLowerRight(ofView: view)
+        menuButton!.addTarget(self, action: "toggle:", forControlEvents: .TouchUpInside)
     }
     
     func toggle(sender: AnyObject!)
     {
-        (sender as! LBHamburgerButton).switchState()
+        (sender as! MenuButton).switchState()
     }
 
     func menuButton(menuButton: MenuButton, didSelectItemAtIndex index: Int)

@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import SnapKit
 import pop
+
+typealias MenuButtonType = LBHamburgerButtonType
 
 protocol MenuButtonDataSource
 {
@@ -25,11 +28,11 @@ class MenuButton: LBHamburgerButton
     var delegate: MenuButtonDelegate?
     var dataSource: MenuButtonDataSource?
     
-    init(frame: CGRect)
+    init(type: MenuButtonType)
     {
         super.init(
-            frame: frame,
-            type: LBHamburgerButtonType.CloseButton,
+            frame: CGRectMake(0, 0, 50, 50),
+            type: type,
             lineWidth: 25,
             lineHeight: 3,
             lineSpacing: 5,
@@ -44,6 +47,18 @@ class MenuButton: LBHamburgerButton
     required init?(coder: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func placeLowerRight(ofView view:UIView)
+    {
+        view.addSubview(self)
+        
+        self.snp_makeConstraints { (make) -> Void in
+            make.right.equalTo(view).offset(-15)
+            make.bottom.equalTo(view).offset(-15)
+            make.size.width.equalTo(50)
+            make.size.height.equalTo(50)
+        }
     }
     
     override func switchState()

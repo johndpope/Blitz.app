@@ -11,8 +11,18 @@ import pop
 
 class AddBlitzViewController: BaseViewController
 {
-    override func viewDidAppear(animated: Bool)
+    override func viewDidLoad()
     {
-
+        super.viewDidLoad()
+        
+        menuButton = MenuButton(type: MenuButtonType.BackButton)
+        menuButton!.placeLowerRight(ofView: view)
+        menuButton!.addTarget(self, action: "dismiss:", forControlEvents: .TouchUpInside)
+        menuButton!.switchState()
+    }
+    
+    func dismiss(sender: AnyObject?)
+    {
+        
     }
 }

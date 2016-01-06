@@ -48,6 +48,7 @@ class ExpandTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
         maskLayer.addAnimation(maskLayerAnimation, forKey: "path")
         
         let backgroundColorAnimation = POPBasicAnimation(propertyNamed: kPOPViewBackgroundColor)
+        backgroundColorAnimation.fromValue = UIColor.blitzDarkBlueColor()
         backgroundColorAnimation.toValue = UIColor.whiteColor()
         backgroundColorAnimation.duration = transitionDuration(transitionContext) * 1.2
         backgroundColorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)

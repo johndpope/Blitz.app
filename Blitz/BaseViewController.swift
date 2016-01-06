@@ -10,12 +10,13 @@ import UIKit
 
 class BaseViewController: UIViewController, MenuButtonDataSource
 {
-    var transitionView: UIView?    
+    var transitionView: UIView?
+    var menuButton: MenuButton?
     var menuItems: Array<MenuItem> = []
 
     override func viewDidLoad()
     {
-        view.backgroundColor = UIColor.blitzDarkBlueColor()
+        view.backgroundColor = UIColor.whiteColor()
     }
     
     func numberOfButtons(menuButton: MenuButton) -> Int

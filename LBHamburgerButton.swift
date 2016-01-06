@@ -175,7 +175,7 @@ class LBHamburgerButton: UIButton {
                 animRotate.keyTimes = [ 0, 0.33, 0.73, 1.0]
                 
                 let startPoint = forward ? CGPointMake(_lineCenter.x, _lineCenter.y - _lineHeight - _lineSpacing) : CGPointMake(_lineCenter.x - scale(10), _lineCenter.y + _lineHeight + scale(7.2))
-                let endPoint = forward ? CGPointMake(_lineCenter.x - scale(10), _lineCenter.y + _lineHeight + scale(7.2)) : CGPointMake(_lineCenter.x, _lineCenter.y - _lineHeight - _lineSpacing)
+                let endPoint = forward ? CGPointMake(_lineCenter.x - scale(10), _lineCenter.y + _lineHeight + scale(7.1)) : CGPointMake(_lineCenter.x, _lineCenter.y - _lineHeight - _lineSpacing)
                 let controlPoint = CGPointMake(_lineCenter.x + scale(15), _lineCenter.y)
                 
                 let animPosition = CAKeyframeAnimation(keyPath: "position")
@@ -183,7 +183,10 @@ class LBHamburgerButton: UIButton {
                 animPosition.removedOnCompletion = false
                 animPosition.fillMode = kCAFillModeForwards
                 
-                return [ animRotate, animPosition ]
+                let animScale = CAKeyframeAnimation(keyPath: "transform.scale.x")
+                animScale.values = forward ? [ 1, 0.7 ] : [ 0.7, 1 ]
+                
+                return [ animRotate, animPosition, animScale ]
             case 1:
                 let animRotate = CAKeyframeAnimation(keyPath: "transform.rotation")
                 animRotate.values = forward ? [ 0, (M_PI) ] : [ (M_PI), 0]
@@ -196,7 +199,7 @@ class LBHamburgerButton: UIButton {
                 animRotate.keyTimes = [ 0, 0.33, 0.73, 1.0]
                 
                 let startPoint = forward ? CGPointMake(_lineCenter.x, _lineCenter.y + _lineHeight + _lineSpacing) : CGPointMake(_lineCenter.x - scale(10), _lineCenter.y - _lineHeight - scale(7.2))
-                let endPoint = forward ? CGPointMake(_lineCenter.x - scale(10), _lineCenter.y - _lineHeight - scale(7.2)) : CGPointMake(_lineCenter.x, _lineCenter.y + _lineHeight + _lineSpacing)
+                let endPoint = forward ? CGPointMake(_lineCenter.x - scale(10), _lineCenter.y - _lineHeight - scale(7.1)) : CGPointMake(_lineCenter.x, _lineCenter.y + _lineHeight + _lineSpacing)
                 let controlPoint = CGPointMake(_lineCenter.x + scale(15), _lineCenter.y)
                 
                 let animPosition = CAKeyframeAnimation(keyPath: "position")
@@ -204,7 +207,10 @@ class LBHamburgerButton: UIButton {
                 animPosition.removedOnCompletion = false
                 animPosition.fillMode = kCAFillModeForwards
                 
-                return [ animRotate, animPosition ]
+                let animScale = CAKeyframeAnimation(keyPath: "transform.scale.x")
+                animScale.values = forward ? [ 1, 0.7 ] : [ 0.7, 1 ]
+                
+                return [ animRotate, animPosition, animScale ]
             default:
                 return nil
             }
