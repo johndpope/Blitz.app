@@ -1,6 +1,4 @@
 #import <Foundation/Foundation.h>
-
-
 #import "GClusterRenderer.h"
 #import "GQTPointQuadTreeItem.h"
 #import <Mapbox/Mapbox.h>
@@ -18,12 +16,15 @@
 - (void)addItem:(id <GClusterItem>) item;
 - (void)removeItems;
 - (void)removeItemsNotInRectangle:(CGRect)rect;
+- (void)hideItemsNotInVisibleBounds;
 
+- (void)removeItem:(id <GClusterItem>) item;
+- (BOOL)containsItem:(id <GClusterItem>) item;
 - (void)cluster;
 
 //convenience
 
-+ (instancetype)managerWithMapView:(MGLMapView*)googleMap
++ (instancetype)managerWithMapView:(GMSMapView*)googleMap
                          algorithm:(id<GClusterAlgorithm>)algorithm
                           renderer:(id<GClusterRenderer>)renderer;
 

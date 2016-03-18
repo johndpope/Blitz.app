@@ -40,6 +40,15 @@
 }
 
 #pragma mark mapview delegate
+
+- (nullable MGLAnnotationImage *)mapView:(MGLMapView *)mapView imageForAnnotation:(id<MGLAnnotation>)annotation
+{
+    UIImage *img = [UIImage imageNamed:@"paper"];
+    
+    MGLAnnotationImage *image = [MGLAnnotationImage annotationImageWithImage:img reuseIdentifier:@"test"];
+    return image;
+}
+
 /*
 -(void)mapView:(MGLMapView *)mapView willMove:(BOOL)gesture {
     if ([self delegate] != nil
