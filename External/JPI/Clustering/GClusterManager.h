@@ -24,7 +24,7 @@
 
 //convenience
 
-+ (instancetype)managerWithMapView:(GMSMapView*)googleMap
++ (instancetype)managerWithMapView:(MGLMapView*)googleMap
                          algorithm:(id<GClusterAlgorithm>)algorithm
                           renderer:(id<GClusterRenderer>)renderer;
 
